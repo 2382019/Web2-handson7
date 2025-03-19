@@ -33,8 +33,8 @@ export class SongsService {
   updateOne(id: number, createSongDTO: CreateSongDTO) {
     this.songs.forEach((song) => {
       if (song.id === id) {
-        song.title = createSongDTO.title;
         song.artist = createSongDTO.artist;
+        song.title = createSongDTO.title;
       }
     });
   }
